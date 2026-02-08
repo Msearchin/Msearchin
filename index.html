@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Msearch</title>
+<style>
+body{font-family:arial;text-align:center;margin-top:120px}
+input{width:60%;padding:10px;border-radius:20px;border:1px solid #ccc}
+button{padding:10px 15px;border-radius:20px;border:none;background:#4285f4;color:#fff}
+#out{margin-top:30px}
+</style>
+</head>
+
+<body>
+<h1 style="color:#4285f4">Msearch</h1>
+
+<input id="q" placeholder="Search or ask...">
+<button onclick="s()">Search</button>
+
+<div id="out"></div>
+
+<script>
+function s(){
+let q=document.getElementById("q").value;
+document.getElementById("out").innerHTML=
+"<p>You asked: <b>"+q+"</b></p><p>This is a demo answer.</p>";
+}
+</script>
+</body>
+</html>
